@@ -4,4 +4,4 @@
 n = int(input())
 
 dct = {i: round((1 + (1 / i)) ** i, 2) for i in range(1,n+1)}
-print(dct)
+print(sum(dct.values()))
