@@ -5,8 +5,8 @@ s1, s2 ='', ''
 
 
 def open_file(f, s):
-    with open(f, 'r') as file:
-        for line in file:
+    with open(f, 'r') as data:
+        for line in data:
             s = line
     return s
 
@@ -56,9 +56,10 @@ for i in range(long_ind, -1, -1):
             lst.append(str(d[i]))
         else:
             lst.append(str(d[i]) + '*x^' + str(i))
+final = ' + '.join(lst)
 
-with open('file2.txt', 'w') as file:
-    print(*lst, file=file, sep = ' + ', end=' = 0\n')
+with open('file2.txt', 'w') as data:
+    data.write(final.replace('+ -', '- '))
 
 
 
