@@ -4,5 +4,8 @@
     - [1.1, 1.2, 3.1, 5.1, 10.01] => 0.19'''
 
 lst = [1.1, 1.2, 3.1, 5.1, 10.01]
-lst1 = [i%1 for i in lst]
-print(max(lst1)-min(lst1))
+# lst1 = [i%1 for i in lst]
+for i in range(len(lst)):
+    lst[i] -= int(lst[i])
+# print(max(lst1)-min(lst1))
+print(round(max(lst)-min(lst),2))
