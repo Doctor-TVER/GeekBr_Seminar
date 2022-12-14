@@ -22,4 +22,5 @@ def pare_multiply(lst):
     return lst1
 
 
-print(pare_multiply([2,3,4,5,6]))
+x = list(map(int, input().split()))
+print(pare_multiply(x))

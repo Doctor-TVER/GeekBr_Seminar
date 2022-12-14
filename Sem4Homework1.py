@@ -7,4 +7,3 @@ from math import pi
 d = input()
 p = str(pi)[:len(d)]
 print(p)
-

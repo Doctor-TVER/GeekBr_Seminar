@@ -3,9 +3,9 @@
 Пример:
     - [1.1, 1.2, 3.1, 5.1, 10.01] => 0.19'''
 
-lst = [1.1, 1.2, 3.1, 5.1, 10.01]
+x = list(map(float, input().split()))
 # lst1 = [i%1 for i in lst]
-for i in range(len(lst)):
-    lst[i] -= int(lst[i])
+for i in range(len(x)):
+    x[i] -= int(x[i])
 # print(max(lst1)-min(lst1))
-print(round(max(lst)-min(lst),2))
+print(round(max(x)-min(x),2))

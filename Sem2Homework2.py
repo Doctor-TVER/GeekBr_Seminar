@@ -1,6 +1,6 @@
 '''Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N.'''
 
 total = 1
-for i in range(1,int(input())+1):
+for i in range(1, int(input())+1):
     total *= i
     print(total, end=' ')
